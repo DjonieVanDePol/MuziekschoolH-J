@@ -1,0 +1,152 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container > div.zijbalk {
+  background-color: #FFB785;
+  padding: 25px;
+}
+
+.container > div.hoofd {
+  background-color: #FFFFFF;
+  padding: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container > div.zijbalk {
+    background-color: #FFB785;
+    width: 30%;
+    padding: 25px;
+  }
+
+  .container > div.hoofd {
+    background-color: #FFFFFF;
+    width: 70%;
+    padding: 25px;
+  }
+}
+
+body {
+  font-family: 'Verdana', sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 250px;
+  padding: 5px;
+  background-color: #F57114;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+footer {
+  background-color: #D15F0F;
+  text-align: center;
+  padding: 10px;
+}
+
+h2.h_hoofd {
+  color: #F57114;
+}
+
+ul.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #BD560D;
+  border-bottom: 5px solid #FFD700;
+}
+
+li.menu {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  li.menu {
+    float: left;
+  }
+}
+
+a.menu {
+  display: block;
+  text-align: center;
+  padding: 15px 20px;
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: #BD560D;
+}
+
+a.menu:hover {
+  background-color: #F57114;
+}
+
+img.img_zij {
+  margin-left: auto;
+  margin-left: auto;
+  width: 85%;
+  padding: 25px;
+}
+
+img.img_hoofd {
+  width: 33%;
+  padding: 20px;
+}
+
+img.img_hoofd_links {
+  width: 33%;
+  float: left;
+  padding: 20px;
+}
+
+img.img_hoofd_rechts {
+  width: 33%;
+  float: right;
+  padding: 20px;
+}
+
+input[type="text"], input[type="email"] {
+  width: 100%;
+  height: 30px;
+  padding: 5px 10px;
+  margin: 5px 0px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+select {
+  width: 100%;
+  height: 45px;
+  padding: 5px 10px;
+  margin: 5px 0px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  padding: 15px;
+  margin: 5px 0px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  color: #FFFFFF;
+  height: 40px;
+  padding: 10px 20px;
+  background-color: #D15F0F;
+  border: none;
+  border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+  background-color: #F57114;
+}
